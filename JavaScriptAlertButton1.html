@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Write into an innerHTML</title>
+</head>
+<body>
+    <h2>JavaScript Output Possibility</h2>
+    <p id="demo"></p>
+    
+    <!-- Using innerHTML -->
+    <script>
+        document.getElementById("demo").innerHTML= 7 + 11;
+    </script>
+
+    <!-- using document.write -->
+    <script>
+        document.write(11+7);
+    </script>
+
+    <!-- using document.write after an html is loaded, delete all existing html -->
+    <button type="button" onclick="document.write(11+7)">Answer
+
+    </button><br>
+
+    <!-- using window.alert -->
+    <script>
+        window.alert(11+7);
+    </script>
+
+</body>
+</html>

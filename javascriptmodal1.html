@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.tutorialjinni.com/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+    <script src="./vendor/js/country-states.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+
+    <title>JavaScript Modal Login Form</title>
+    <link rel="stylesheet" href="./Javascriptmodal1.css">
+</head>
+<body style="background-color: darkslategray;">
+    <h2 style="color: aliceblue;">Modal Login Form</h2>
+    
+<!-- Login Button -->
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<!-- Register Button -->
+<button class="btn2" onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Register</button>
+
+<!-- Login form -->
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php" method="post">
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+      <img src="IMG-20211111-WA0004.jpg" style="width: 10%;" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" name="password" autocomplete="current-password" required="" id="id_password">
+      <i class="far fa-eye" id="togglePassword" style="margin-left: 467px; cursor: pointer;
+      background: none;
+      top: 355px;
+      width: 1%;
+      color: black;
+      text-align: center;
+      border-radius: 10px;
+      position:absolute"></i>
+        
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" check="check" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<!-- Registration form -->
+<div id="id02" class="modal">
+  
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="IMG-20211111-WA0004.jpg" style="width: 10%;" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+
+        <label for="uname"><b>Firstname</b></label>
+        <input type="text" placeholder="Enter Firstname" name="uname" required>
+
+        <label for="uname"><b>Middlename</b></label>
+        <input type="text" placeholder="Enter Middlename" name="uname" required>
+
+        <label for="uname"><b>Phone Number</b></label><br>
+        <input style="width: 490px;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;" required name="phone" type="tel" id="phone"/><br>
+
+        <label for="uname"><b>Email</b></label>
+        <input style="width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;" type="email" placeholder="Enter email" name="email" required><br>
+
+        <label for="uname"><b>Address</b></label>
+        <input type="text" placeholderEnter Address" name="uname" required>
+
+        <label for="uname"><b>L.G.A</b></label>
+        <input type="text" placeholder="Enter L.G.A" name="LGA" required>
+
+        <label for="uname"><b>City/Town</b></label>
+        <input type="text" placeholder="Enter City/Town" name="city" required>
+
+        <!-- Nigeria States dropdown -->
+        <label for="uname"><b>State</b></label>
+        <select id="state-code" class="select1" required>
+          <option value="">select state</option>
+          
+        </select>
+
+        <!-- Country dropdown -->
+        <label for="uname"><b>Country</b></label>
+        <select name="" id="country" class="select1" required>
+            <option value="">select country</option>
+            
+        </select><br>
+        <label for="uname"><b>DOB</b></label>
+        <input style="width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        display: inline-block;
+        border: 1px solid #ccc;
+        box-sizing: border-box;" type="date" required><br>
+
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+  
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+          
+        <button type="submit">Register</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+<script src="./Javascriptmodal1.js">
+
+</script>
+    
+</body>
+</html>
